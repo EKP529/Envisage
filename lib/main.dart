@@ -318,6 +318,7 @@ class _SignInFormState extends State<SignInForm>
                   return null;
                 },
                 controller: _passwordTextController,
+                obscureText: true,
                 decoration: const InputDecoration(hintText: 'Password'),
               ),
             ),
@@ -2147,7 +2148,7 @@ class _PlanScreenState extends State<PlanScreen>
                   ),
                   textAlign: TextAlign.left,
                 ),
-                Text(widget.thisPlan.cost,
+                Text(widget.thisPlan.cost + ' / person',
                   style: const TextStyle(
                       fontSize: 18
                   ),
